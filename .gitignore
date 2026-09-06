@@ -1,0 +1,11 @@
+.pytest_cache
+app/__pycache__
+data/index
+
+tests/__pycache__
+
+.DS_Store
+data/.DS_Store
+
+### VS Code ###
+.vscode/
