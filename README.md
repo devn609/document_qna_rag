@@ -1,6 +1,6 @@
 # Document Q&A — RAG
 
-A complete Python RAG application for asking questions over PDF, DOCX, TXT, Markdown, and CSV documents.
+A complete Python RAG application for querying PDF, DOCX, TXT, Markdown, and CSV documents.
 
 ## Architecture
 
