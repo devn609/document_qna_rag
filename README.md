@@ -97,7 +97,7 @@ curl -X POST http://127.0.0.1:8000/ingest \
   -F "file=@./my_document.pdf"
 ```
 
-Ask:
+Query:
 
 ```bash
 curl -X POST http://127.0.0.1:8000/ask \
@@ -128,7 +128,7 @@ data/index/chunks.pkl
 
 Then ingest again.
 
-## Tests
+## Testing
 
 ```bash
 pytest -v
