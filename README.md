@@ -128,7 +128,7 @@ data/index/chunks.pkl
 
 Then ingest again.
 
-## Testing
+## Tests
 
 ```bash
 pytest -v
