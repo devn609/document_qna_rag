@@ -6,7 +6,7 @@ import pytest
 from app.loaders import load_file, load_directory
 
 def test_load_txt(tmp_path):
-    """TXT files should be loaded with their original content."""
+    """TXT files should be loaded with their original content"""
     file = tmp_path / "document.txt"
 
     sample_text = "Testing QnA"
@@ -18,7 +18,7 @@ def test_load_txt(tmp_path):
 
 
 def test_load_markdown(tmp_path):
-    """Markdown files should be loaded as text."""
+    """Markdown files should be loaded as text"""
     file = tmp_path / "document.md"
     file.write_text("# RAG Bot\n\nThis is a document.", encoding="utf-8")
 
@@ -29,7 +29,7 @@ def test_load_markdown(tmp_path):
 
 
 def test_load_csv(tmp_path):
-    """CSV rows should be converted into searchable text."""
+    """CSV rows should be converted into searchable text"""
     file = tmp_path / "employees.csv"
 
     with file.open("w", encoding="utf-8", newline="") as f:
@@ -48,7 +48,7 @@ def test_load_csv(tmp_path):
 
 
 def test_load_empty_file(tmp_path):
-    """An empty text file should return an empty string."""
+    """An empty text file should return an empty string"""
     file = tmp_path / "empty.txt"
     file.write_text("", encoding="utf-8")
 
@@ -58,7 +58,7 @@ def test_load_empty_file(tmp_path):
 
 
 def test_unsupported_file_type(tmp_path):
-    """Unsupported extensions should raise ValueError."""
+    """Unsupported extensions should raise ValueError"""
     file = tmp_path / "document.xyz"
     file.write_text("some content", encoding="utf-8")
 

@@ -48,5 +48,5 @@ def main():
                 st.markdown(f"**{source['source']} — chunk {source['chunk']} — score {source['score']}**")
                 st.write(source["text"])
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
     main()

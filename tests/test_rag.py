@@ -13,7 +13,7 @@ def create_engine():
 
 
 def test_split_empty_document():
-    """Blank documents should produce no chunks."""
+    """Blank documents should produce no chunks"""
     engine = create_engine()
 
     result = engine._split("   ")
@@ -22,17 +22,17 @@ def test_split_empty_document():
 
 
 def test_split_short_document():
-    """A short document should remain a single chunk."""
+    """A short document should remain a single chunk"""
     engine = create_engine()
 
-    result = engine._split("This is a short document.")
+    result = engine._split("This is a short document")
 
     assert len(result) == 1
     assert result[0] == "This is a short document."
 
 
 def test_search_empty_index():
-    """Searching an empty index should return no results."""
+    """Searching an empty index should return no results"""
     engine = create_engine()
 
     engine.index = None
@@ -44,7 +44,7 @@ def test_search_empty_index():
 
 
 def test_search_returns_relevant_chunks(monkeypatch):
-    """Search should return chunks in the order returned by FAISS."""
+    """Search should return chunks in the order returned by FAISS"""
     engine = create_engine()
 
     engine.chunks = [
